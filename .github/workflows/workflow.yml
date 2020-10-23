@@ -69,7 +69,7 @@ jobs:
         arch: x86
         profile: Nexus 6
         avd-name: test
-        emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none
+        emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim -camera-back none -no-accel
         disable-animations: true
         working-directory: ./test-fixture/
         script: |

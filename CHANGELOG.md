@@ -1,5 +1,20 @@
 # Change Log
 
+## v2.13.0
+
+Added `-no-accel` as default param on `emulator-options`.
+Added `armeabi-v7a` as supported `arch` option.
+
+```
+- name: run tests
+  uses: reactivecircus/android-emulator-runner@v2
+  with:
+    api-level: 30
+    target: playstore
+    arch: armeabi-v7a
+    script: ./gradlew connectedCheck
+```
+
 ## v2.12.0
 
 Added support for using the `playstore` system images:
